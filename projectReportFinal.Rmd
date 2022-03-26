@@ -10,6 +10,7 @@ fig_caption: yes
 ---
 ```{r, include=FALSE}
 source("projectScript.R")
+knitr::opts_chunk$set(fig.pos = "!h", out.extra = "")
 ```
 
 ## 1. Introduction
@@ -18,7 +19,7 @@ Making a profit in retail is more difficult than any other industry (Gaur et al.
 
 The weather has been identified as an important driver of demand and constitutes a major risk for retailers. Especially in the apparel industry weather is believed to have a prominent impact on retail sales (Belkaid et al.,2020). It is difficult to anticipate daily weather in advance, but it has an immediate impact on daily business and sales. Weather such as precipitation (snow and rain) can significantly influence a shopper's decision. It is obscure how consumers will react to weather conditions. The shoppers may choose to consider good weather as a reason for engaging in outdoor activities and thus postpone or forgo purchases. On the other hand, they might consider shopping in clear and sunny weather. During bad weather conditions retailers often offer low/discounted prices to attract consumers, this might lead to consumer hoarding supplies/bulk buying leading to significant demand fluctuations. 
 
- It is learned that people in a good mood are more likely to spend more money and reward themselves (Badorf et. al,2020). Extreme weather can have a negative effect on an individual's mood and may have a psychological impact on a shopper's willingness to visit retail stores. It might cause them to shop online or postpone the plan of shopping. Whether being categorized as good or bad depends on a person’s perception. Individuals from different socio-demographic backgrounds can perceive weather differently. So, the weather’s impact on retail sales is a complex but important topic and needs to be further studied for a better understanding of its business implications. 
+It is learned that people in a good mood are more likely to spend more money and reward themselves (Badorf et. al,2020). Extreme weather can have a negative effect on an individual's mood and may have a psychological impact on a shopper's willingness to visit retail stores. It might cause them to shop online or postpone the plan of shopping. Whether being categorized as good or bad depends on a person’s perception. Individuals from different socio-demographic backgrounds can perceive weather differently. So, the weather’s impact on retail sales is a complex but important topic and needs to be further studied for a better understanding of its business implications. 
  
 - Objective
 
@@ -26,40 +27,59 @@ In this study, we have analyzed the impact of weather on retail sales in the maj
 
 Therefore, our research question is the following: 
 
-How weather impacts retail sales in Canada for clothing and footwear industry?
+**How weather impacts retail sales in Canada for clothing and footwear industry?** 
 
 ## 2. Literature Review
 
-- Previous studies of weather’s impact on retail sales 
+**Previous studies of weather’s impact on retail sales**
 
 Steele (1951) was one of the first researchers who analyzed the impact of weather on retail sales. He studied the impact of snowfall, rainfall, temperature, wind speed and sunshine on the sale of department stores in the period of seven weeks before Easter. Temperature and sunshine show positive impact, whereas rain, wind and snow show negative impact. Among the analyzed variables, snow shows the strongest impact on department store sales. 
 
 Weather significantly affects four major shopping decisions of consumers: what to buy, when to buy and where to buy (Agnew and Thornes, 1995). Spes et al (1997) researched the impact of store characteristics on consumer’s mood, satisfaction and purchasing behavior. Starr-McCluer (2000) examined the effects of temperature on total US retail sales. Reser and Swim (2011) found that bad weather information indirectly affects people creating a certain degree of anxiety and tension. 
 
 Belkaid et. al, 2020 found that weather is an important driver of demand and possesses a major risk for retailers, especially in goods where usage is affected by weather conditions, such as fashion apparel. They did a comparative analysis of how weather affects the sales of street stores and malls in the apparel industry.   
+
 We have particularly analyzed the impact of weather variables such as Rain, snow, temperature, and wind speed on retail sales. We have reviewed many literatures based on which we formed hypotheses. 
 
-- How do weather variables impact?  
+There are different ways by which weather can affect our physiology and psychology 
+
+**How do weather variables impact?** 
 
 Bahng and Kincade (2012) show that a fluctuation in temperatures affects the sales of seasonal clothing, and a drastic temperature change leads to an increase in seasonal clothing sales (Bahng and Kincade, 2012). Zwebner et al. (2014) found that weather conditions will change people’s product valuations, and people’s perceptions of products are more positive on warm days. Bertrand et al. (2015) find that clothing sales in spring and autumn are affected by abnormal weather, while clothing sales in summer and winter are not affected. Steinker et al. (2017) integrate weather data into the sales forecasting of the largest European online fashion retailer. They found that sunshine, temperature, and rain have a significant impact on daily sales, particularly in the summer, on weekends, and on days with extreme weather. Keles¸ et al. (2018) contrast two models to estimate the impact of temperature on the profitability of companies. Parsons (2001) studied the effect of temperature, rainfall, sunshine hours, and relative humidity on shopping center attendance. Only the colder part of the year from September to February was observed. Results show that temperature and rainfall have a negative impact on the number of visitors, whereas sunshine hours and humidity do not show significant effect at all. 
 
-- Psychological 
+**Psychological**
 
-Severe weather (such as rain, snow, haze, and other extreme weather) may lead to bad moods, which may cause consumers to stay at home or change their purchase channels, such as online shopping instead of shopping in distant physical stores.
+Severe weather (such as rain, snow, haze, and other extreme weather) may lead to bad moods, which may cause consumers to stay at home or change their purchase channels, such as online shopping instead of shopping in distant physical stores. Rain causes discomfort in a direct way and reduces the sense of comfort of pedestrians (Miranda-Moreno & Lahti, 2013). In addition, it has also an impact on mood for two reasons. First, rain is associated with more cloud cover, which results in a reduction of sunlight, and hence reduces positive mood. Second, rain increases humidity, which has been associated negatively with mood (Howarth & Hoffman, 1984; Sanders & Brizzolara, 1982): this implies that rain again reduces positive mood. 
+
+Research shows that retail sales are influenced by various economic measures, such as the consumer price index (CPI), disposable income, consumer confidence and unemployment levels (Allenby et al., 2012; Grimsey, 2018; Tartaglione et al., 2019). Not surprisingly increase in CPI and unemployment levels will decrease retail sales  and increase consumer confidence and disposable income is linked to better retail performance.  
+
+Control Variables: CPI , unemployability, consumer confidence, and disposable income
+
+Inspired by these past researches and studies, we evaluated the impact of weather on retail sales. For our research purpose we selected the weather variables such as snow, temperature, rain and wind speed as our independent variables.  In order to contol retail sales for variables beside the weather, following variables were observed: Consumer price Index(CPI), Disposable income, consumer confidence and unemployment rate. 
+
+Based on our literature review, this research aims to test these hypotheses. 
+
+- H1: Rain decreases retail sales. 
+
+- H2: Snow decreases retail sales. 
+
+- H3: Wind speed decreases retail sales. 
+
+- H4: For a given historical temperature, the retail sales is negatively influenced by mean temperature.
 
 ## 3. Exploratory Data Analysis
 
 ### Methodology
 
-The main goal of our project is to study the impact of weather on consumer retail sales by taking the example of Clothing and Footwear industry in Canada. We have limited the scope of the analysis by considering only the three biggest cities in Canada and consider them as a proxy to explain the consumer behavior for all of Canada. Only data from 2009 to 2019 are considered in our analysis. Because retail sales after 2019 will be significantly affected by covid and this might mask the impact of weather which we wanted to highlight in our project. 
+The main goal of our project is to study the impact of weather on consumer retail sales by taking the example of the Clothing and Footwear industry in Canada. We have limited the scope of the analysis by considering only the three biggest cities in Canada and consider them as a proxy to explain the consumer behavior for all of Canada. Only data from 2009 to 2019 are considered in our analysis. Because retail sales after 2019 will be significantly affected by covid and this might mask the impact of weather which we wanted to highlight in our project.  
 
-Monthly aggregated data for the Clothing and Footwear Industry was collected from Statistics Canada website and this was connected to weather data of the same aggregation level using the weathercan API in R. Based on previous literature and data availability, we have decided to include only “total_rain”, “total_snow”, “mean_temp”, and “ spd_max_gust” to study the impact of weather on sales. During data analysis, we decide to add another feature “winter” to augment the impact of total snow. Because snow fall occurs only during the winter months, because which the variable “total_snow” might have a diminishing effect on the model predictability. 
+Monthly aggregated data for the Clothing and Footwear Industry was collected from the Statistics Canada website and this was connected to weather data of the same aggregation level using the weathercan API in R. Based on previous literature and data availability, we have decided to include only “total_rain”, “total_snow”, “mean_temp”, and “ spd_max_gust” to study the impact of weather on sales. During data analysis, we decide to add another feature “winter” to augment the impact of total snow. Because snowfall occurs only during the winter months, because which the variable “total_snow” might have a diminishing effect on the model predictability.  
 
-Models were developed using the weather factors and we control the influence of factors other than our independent variables using control variables. Control variables consumer confidence, consumer price index, disposable income, and unemployment rate were identified based on literature and were also collected at respective aggregation level of province and month from the Statistics Canada website. 
+Models were developed using the weather factors and we control the influence of factors other than our independent variables using control variables. Control variables consumer confidence, consumer price index, disposable income, and the unemployment rate were identified based on literature and were also collected at a respective aggregation level of province and month from the Statistics Canada website.  
 
 ### Univariate Analysis
 
-Figure 1 gives the overall distribution of retail sales over the years from 2009 to 2019. Since the data is right skewed from the distribution plot, we corrected it using a log transformation before training the linear models. The following histogram plots of original versus transformed sales show how log transformation has helped fix skewness of our dependent variable. 
+Figure 1 gives the overall distribution of retail sales over the years from 2009 to 2019. Since the data is right-skewed from the distribution plot, we corrected it using a log transformation before training the linear models. The following histogram plots of original versus transformed sales show how log transformation has helped fix the skewness of our dependent variable. 
 
 ```{r Figure1, echo=FALSE, fig.cap="Histogram of Retail Sale", fig.show="hold", out.width="50%"}
 hist(data_monthly$sales, main="Original")
@@ -68,7 +88,7 @@ hist(log(data_monthly$sales+1), main="Log Transformed")
 
 ### Multivariate Analysis
 
-The independent variables considered in our analysis are all numerical and there was no need to dummy encode variables in the study. The first step in our multivariate analysis was to calculate the Pearson correlation between the numerical variables. This gives us the linear relationship between them, which is critical for our analysis because we are using linear predictive models and one of the assumptions to validate such models is that the predictors are independent and are not related to each other. The following correlation table and Figure 2 highlights the linear relationships that exist between the variables in our data. Apart from correlation plots, we are also doing a second level of protection against multicollinearity by validating the models developed using Variance Inflation Factor (VIF).  
+The independent variables considered in our analysis are all numerical and there was no need to dummy encode variables in the study. The first step in our multivariate analysis was to calculate the Pearson correlation between the numerical variables. This gives us the linear relationship between them, which is critical for our analysis because we are using linear predictive models and one of the assumptions to validate such models is that the predictors are independent and are not related to each other. The following correlation table and Figure 2 highlight the linear relationships that exist between the variables in our data. Apart from correlation plots, we are also doing the second level of protection against multicollinearity by validating the models developed using the Variance Inflation Factor (VIF).  
 
 ```{r Figure 2, echo=FALSE, fig.cap='Correlation Heatmap'}
 ggcorrplot(corr, hc.order = TRUE, type = "lower",
@@ -83,7 +103,7 @@ ggcorrplot(corr, hc.order = TRUE, type = "lower",
 kable(corr, booktabs = TRUE, caption = "Correlation Matrix") %>% kable_styling(latex_options = "scale_down")
 ```
 
-From the boxplots (Figure 4) of sales in the provinces, we can see that there is a significant difference between the sales distribution across the regions. Retail sales from clothing and footwear is maximum in Ontario, followed by Quebec, then British Columbia. But we are not adding province as a predictor in our models because we found that it has multicollinear effects on our other predictors and suppresses their coefficients and predictive importance. 
+From the boxplots (Figure 3) of sales in the provinces, we can see that there is a significant difference between the sales distribution across the regions. Retail sales from clothing and footwear are maximum in Ontario, followed by Quebec, then British Columbia. But we are not adding province as a predictor in our models because we found that it has multicollinear effects on our other predictors and suppresses their coefficients and predictive importance. 
 
 ```{r Figure 3, echo=FALSE, fig.cap="Boxplot of sales by province"}
 boxplot(sales~prov,
@@ -92,7 +112,7 @@ boxplot(sales~prov,
         ylab="Retail Sale")
 ```
 
-The following scatterplots (Figure 4) are indicative of the effects of weather on sales we wanted to study in the research. Retail sales have a negatively trending relation with total snow, total rain, and max gust, thus providing a preliminary backup to our hypothesis. Retail sales do not seem to be affected by the mean temperature of the region, which is different from the literature.  
+The following scatterplots (Figure 4) are indicative of the effects of weather on sales we wanted to study in the research. Retail sales have a negatively trending relation with total snow, total rain, and max gust, thus providing a preliminary backup to our hypothesis. Retail sales do not seem to be affected by the mean temperature of the region, which is different from the literature.
 
 ```{r Figure 4, echo=FALSE, fig.cap="Scatterplots of Sales vs Weather", fig.show="hold", out.width="50%"}
 #Scatter plot of sales and total_snow
@@ -111,7 +131,7 @@ scatterplot(sales ~ spd_max_gust, main="sales vs spd_max_gust",
 scatterplot(sales ~ mean_temp, main="sales vs mean_temp",
    xlab="Temperature ", ylab="RetailSales ", data=data_monthly, pch=19)
 ```
-The scatterplots also indicate the presence of outliers which was confirmed using the summary table below. Also, since the input variables are of different scales, we have decided to scale the variables using z-score transformations and trim outliers that have z-value of more than 3. Resulting nulls were imputed using KNN imputation. KNN looks at the values of the nearest neighbors to the null values and imputes them with their averages.  
+The scatterplots also indicate the presence of outliers which was confirmed using the summary table below. Also, since the input variables are of different scales, we have decided to scale the variables using z-score transformations and trim outliers that have a z-value of more than 3. The resulting nulls were imputed using KNN imputation. KNN looks at the values of the nearest neighbors to the null values and imputes them with their averages. 
 
 ```{r Table2, echo=FALSE, results='asis'}
 stargazer(data_monthly, iqr = TRUE, nobs=FALSE,
@@ -123,9 +143,9 @@ header=FALSE)
 
 ## 4. Models
 
-To examine the relationship between weather and retail sales, we used linear regression models. We developed models based on a distinct set of control variables. For explaining the weather effect on sales, we have developed 4 multiple regression models by adding the control variables one by one along with the other independent variables. The control variables are significantly correlated to each other based on the correlation table and adding them together will naturally enhance the R-squared values. This will make it exceedingly difficult to study the impact of our weather variables in predicting sales. Which is why we have taken this approach of using 4 separate models to validate our hypothesis. The data is standardized so that the coefficients in result tables are interpretable.  
+To examine the relationship between weather and retail sales, we used linear regression models. We developed models based on a distinct set of control variables. For explaining the weather effect on sales, 4 multiple regression models were developed by adding the control variables one at a time along with the other independent variables. Since the control variables are significantly correlated to each other based on the correlation table, adding them together will naturally enhance the R-squared values. This will make it exceedingly difficult to study the impact of our weather variables in predicting sales. Therefore, we have taken this approach of using 4 separate models to validate our hypothesis. The data is standardized so that the coefficients in result tables are interpretable.  
 
-In the various models we developed, we analyzed the variability caused by independent variables: snow, rain, wind speed and temperature. We also took into account the interaction effect of binary variable winter with snow , rain and wind. In model 1 we have added consumer confidence to the control variables, while cpi index is an additional control variable in model 2. Both of the control variables added are significant in their respective model. Disposable income in model 3 is positively related to retail sales and has high significance. Unemployment rate is highly significant and has negative relation to retail sales. It can be observed that the interaction effect of binary variable winter is not significant in any of the models. If the disposable income and consumer confidence of people in province increases then it has positive impact on retail sales performance. On the other hand if unemployability rate and consumer price index  in a province increases then the retail sales decreases. 
+In the various models we developed, we analyzed the variability caused by independent variables: snow, rain, wind speed, and temperature. We also considered the interaction effect of binary variable winter with snow, rain, and wind. In model 1 we have added consumer confidence to the control variables, while the cpi index is an additional control variable in model 2. Both control variables added are significant in their respective model. Disposable income in model 3 is positively related to retail sales and has high significance. The unemployment rate is highly significant and has a negative relation to retail sales. It can be observed that the interaction effect of binary variable winter is not significant in any of the models. If the disposable income and consumer confidence of people in the province increases, then it has a positive impact on retail sales performance. On the other hand, if the unemployability rate and consumer price index in a province increase then the retail sales will decrease. 
 
 ```{r Table3, echo=FALSE, results='asis'}
 stargazer(lm1,lm2,lm3,lm4,
@@ -138,6 +158,22 @@ header=FALSE)
 
 ## 5. Results and implications 
 
+From the regression table, we can see that model 3 has the highest adjusted R^2^ value. However, the independent variables of snow and wind are not significant in the best model based on the p-value scores from the t-tests. Also, from the correlation table, we observed that disposable income is significantly correlated (0.8) to sales which diminishes the impact of weather on retail prediction as most of the variability is explained by this one predictor. Hence, we took model 4 as the best performing model of our analysis which has an adjusted R^2^ value equal to 0.482.
+ 
+```{r Model Equation, echo=FALSE}
+extract_eq(lm4, wrap = TRUE, use_coefs = TRUE)
+```
+
+Robustness checks were then performed on the final regression model to validate the impact of weather on consumer behavior and retail performance derived from the model output. The final model conforms to all the assumptions of linear regression, and it passed the validity tests of 1. Linearity, 2. Nearly Normal Residuals, and 3. Constant Variability (Homoskedasticity). (Figure 5)  
+
+Linearity assumption was verified from the Residual vs Fitted line plots; the fitted line from the model equation closely aligns with the x-axis. Normality assumption was verified from the Q-Q plot of residuals and its distribution plot. Homoskedasticity was also proven from the Residual vs Fitted line plots as the data points are centered around the x-axis with constant variability.  
+
+Contrary to previous literature, from our analysis we found out that temperature does not play a significant role in predicting retail sales, rejecting our hypothesis about temperature. However, we have found that other weather variables such as wind, snow, and rain can be strong predictors of retail sales. This is not surprising as rain, snow, and wind create substantial changes in consumer comfort while temperature whose impact depends on the amount of deviation from base temperature level has a negligible impact (Belkaid et. al 2020).   
+
+Our research is focused on offline retail sales across all kinds of stores. The street-side stores have a prominent presence in the clothing and footwear industry. Consumers might prefer mall stores during harsh weather and might consider shopping at street stores during pleasant weather conditions. Hence, the impact of weather can be significantly different for the street stores and retail mall stores which can be incorporated in further studies. Moreover, we have not considered the shift of consumer shopping interest to online stores in periods of bad weather whose impact on retail sales can be incredibly significant.  
+
+We tried to cover most of the weather parameters in our research, but few of the parameters like sunlight and humidity whose impact on retail sales is believed to be significant in past studies are out of the scope of our study.  
+
 ```{r Figure 5, echo=FALSE, fig.cap="Model Validation", fig.show="hold", out.width="50%"}
 plot(lm4, 1)
 plot(lm4, 2)
@@ -147,10 +183,25 @@ plot(density(resid(lm4)), col="black")
 
 ## 6. Conclusion
 
-In this paper, we empirically studied the effect of rainfall, snowfall, temperature, and gust on the sales of the Clothing and Footwear industry in Canada. We conducted the study at a monthly level and considered the sales of the Ontario, Quebec, and British Columbia to be a proxy for sales across Canada. We were able to establish a clear relation to weather effects and sales which is in line with the literature on physiology and psychology. Harsh weather in general has an overall negative effect on sales and this may be due to both its physiological limitations and psychological implications. Since the weather information was collected at an aggregated level, we were not able to capture the impact of the sudden onset of inclement weather; for example, snowstorms, freezing rain, etc. Also, we are not considering sales at different retail channels. Since most retail stores have adopted or are adopting omnichannel strategies, it will be especially important to study the exact impact weather has on individual channels.  
+In this paper, we empirically studied the effect of rainfall, snowfall, temperature, and gust on the sales of the Clothing and Footwear industry in Canada. We conducted the study at a monthly level and considered the sales of Ontario, Quebec, and British Columbia to be a proxy for sales across Canada. We were able to establish a clear relation to weather effects and sales which is in line with the literature on physiology and psychology. Harsh weather, in general, has an overall negative effect on sales. This may be due to both its physiological limitations and psychological implications. Since the weather information was collected at an aggregated level, we were not able to capture the impact of the sudden onset of inclement weather; for example, snowstorms, freezing rain, etc. Also, we are not considering sales at different retail channels. Since most retail stores have adopted or are adopting omnichannel strategies, it will be especially important to study the exact impact weather has on individual channels.   
 
-In conclusion, we were able to validate three of our hypotheses around weather. Temperature does not seem to have an impact on Fashion Retail Sales in Canada as opposed to previous literature which suggested otherwise. Our research is novel because none of the researchers have studied the effect of weather on retail sales in Canada, but they have all admitted that the impact of weather is regional and can change depending on the population. We hope that this study can inspire new research in this field because it has immense potential to improve demand forecasting models which can significantly alter an organization’s bottom line.  
+In conclusion, we were able to validate three of our hypotheses around the weather. Temperature does not seem to have an impact on Fashion Retail Sales in Canada as opposed to previous literature which suggested otherwise. Our research is novel because none of the researchers have studied the effect of weather on retail sales in Canada, but they have all admitted that the impact of weather is regional and can change depending on the population. We hope that this study can inspire new research in this field because it has immense potential to improve demand forecasting models which can significantly alter an organization’s bottom line.  
 
 ## 7. References
+
+- Agnew, M. D., & Thornes, J. E. (1995). The weather sensitivity of the UK food retail and distribution industry. Meteorological Applications, 2(2), 137–147. https://doi.org/10.1002/met.5060020207
+- Badorf, F., & Hoberg, K. (2020). The impact of daily weather on retail sales: An empirical study in brick-and-mortar stores. Journal of Retailing and Consumer Services, 52, 101921. https://doi.org/10.1016/j.jretconser.2019.101921
+- E. LaZerte, S., & Albers, S. (2018). weathercan: Download and format weather data from Environment and Climate Change Canada. The Journal of Open Source Software, 3(22), 571. https://doi.org/10.21105/joss.00571
+- Martínez-de-Albéniz, V., & Belkaid, A. (2021). Here comes the sun: Fashion goods retailing under weather fluctuations. European Journal of Operational Research, 294(3), 820–830. https://doi.org/10.1016/j.ejor.2020.01.064
+- Rose, N., & Dolega, L. (2021). It’s the Weather: Quantifying the Impact of Weather on Retail Sales. Applied Spatial Analysis and Policy. https://doi.org/10.1007/s12061-021-09397-0
+- Štulec, I., Petljak, K., & Naletina, D. (2019). Weather impact on retail sales: How can weather derivatives help with adverse weather deviations? Journal of Retailing and Consumer Services, 49, 1–10. https://doi.org/10.1016/j.jretconser.2019.02.025
+-Tian, X., Cao, S., & Song, Y. (2021). The impact of weather on consumer behavior and retail performance: Evidence from a convenience store chain in China. Journal of Retailing and Consumer Services, 62, 102583. https://doi.org/10.1016/j.jretconser.2021.102583
+- E. LaZerte, S., & Albers, S. (2018). weathercan: Download and format weather data from Environment and Climate Change Canada. The Journal of Open Source Software, 3(22), 571. https://doi.org/10.21105/joss.00571
+- E-Data Download. (n.d.). Retrieved February 23, 2022, from https://www.conferenceboard.ca/e-data/eDataDownload.aspx
+- Statistics Canada. (n.d.-a). Adjusted household disposable income, Canada, provinces and territories, annual [Data set]. Government of Canada. https://doi.org/10.25318/3610061201-ENG
+- Statistics Canada. (n.d.-b). Consumer Price Index, monthly, not seasonally adjusted [Data set]. Government of Canada. https://doi.org/10.25318/1810000401-ENG
+- Statistics Canada. (n.d.-c). Historical (real-time) releases of retail trade, sales [Data set]. Government of Canada. https://doi.org/10.25318/2010005401-ENG
+- Statistics Canada. (n.d.-d). Labour force characteristics by sex and detailed age group, monthly, unadjusted for seasonality [Data set]. Government of Canada. https://doi.org/10.25318/1410001701-ENG
+
 
  

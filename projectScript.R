@@ -12,6 +12,7 @@ library(factoextra)
 library(knitr)
 library(kableExtra)
 library(sjPlot)
+library(equatiomatic)
 
 
 retail_monthly = read.csv("Data/monthlyRetailSales.csv")

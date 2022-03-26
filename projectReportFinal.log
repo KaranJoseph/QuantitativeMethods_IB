@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.3.25)  25 MAR 2022 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.3.25)  26 MAR 2022 02:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -549,137 +549,150 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 136.
 (/cloud/home/.TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [2]
-<projectReportFinal_files/figure-latex/Figure1-1.pdf, id=71, 422.57875pt x 285.065pt>
+) [2] [3]
+<projectReportFinal_files/figure-latex/Figure1-1.pdf, id=78, 422.57875pt x 285.065pt>
 File: projectReportFinal_files/figure-latex/Figure1-1.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure1-1.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure1-1.pdf  used on input line 269.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure1-1.pdf  used on input line 302.
 (pdftex.def)             Requested size: 234.88217pt x 158.44783pt.
-<projectReportFinal_files/figure-latex/Figure1-2.pdf, id=72, 432.61626pt x 286.06876pt>
+<projectReportFinal_files/figure-latex/Figure1-2.pdf, id=79, 432.61626pt x 286.06876pt>
 File: projectReportFinal_files/figure-latex/Figure1-2.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure1-2.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure1-2.pdf  used on input line 269.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure1-2.pdf  used on input line 302.
 (pdftex.def)             Requested size: 234.87672pt x 155.31291pt.
 
-Overfull \hbox (2.22572pt too wide) in paragraph at lines 269--269
+Overfull \hbox (2.22572pt too wide) in paragraph at lines 302--302
 [][] []
  []
 
-<projectReportFinal_files/figure-latex/Figure 2-1.pdf, id=73, 398.48875pt x 312.16624pt>
+<projectReportFinal_files/figure-latex/Figure 2-1.pdf, id=80, 398.48875pt x 312.16624pt>
 File: projectReportFinal_files/figure-latex/Figure 2-1.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 2-1.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 2-1.pdf  used on input line 290.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 2-1.pdf  used on input line 322.
 (pdftex.def)             Requested size: 398.49385pt x 312.17024pt.
-[3] [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.328 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.328 
-       <./projectReportFinal_files/figure-latex/Figure1-1.pdf> <./projectReportFinal_files/figure-latex/Figure1-2.pdf> <./projectReportFinal_files/figure-latex/Figure 2-1.pdf>]
-<projectReportFinal_files/figure-latex/Figure 3-1.pdf, id=113, 440.64626pt x 248.93pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<projectReportFinal_files/figure-latex/Figure 3-1.pdf, id=81, 440.64626pt x 248.93pt>
 File: projectReportFinal_files/figure-latex/Figure 3-1.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 3-1.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 3-1.pdf  used on input line 331.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 3-1.pdf  used on input line 360.
 (pdftex.def)             Requested size: 440.65189pt x 248.93317pt.
-<projectReportFinal_files/figure-latex/Figure 4-1.pdf, id=114, 452.69125pt x 305.14pt>
+[4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.361 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.361 \end{figure}
+                   <./projectReportFinal_files/figure-latex/Figure1-1.pdf> <./projectReportFinal_files/figure-latex/Figure1-2.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<projectReportFinal_files/figure-latex/Figure 4-1.pdf, id=106, 452.69125pt x 305.14pt>
 File: projectReportFinal_files/figure-latex/Figure 4-1.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 4-1.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 4-1.pdf  used on input line 343.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 4-1.pdf  used on input line 371.
 (pdftex.def)             Requested size: 234.87582pt x 158.31984pt.
-<projectReportFinal_files/figure-latex/Figure 4-2.pdf, id=115, 445.665pt x 305.14pt>
+<projectReportFinal_files/figure-latex/Figure 4-2.pdf, id=107, 445.665pt x 305.14pt>
 File: projectReportFinal_files/figure-latex/Figure 4-2.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 4-2.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 4-2.pdf  used on input line 343.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 4-2.pdf  used on input line 371.
 (pdftex.def)             Requested size: 234.87526pt x 160.81549pt.
-<projectReportFinal_files/figure-latex/Figure 4-3.pdf, id=116, 445.665pt x 305.14pt>
+<projectReportFinal_files/figure-latex/Figure 4-3.pdf, id=108, 445.665pt x 305.14pt>
 File: projectReportFinal_files/figure-latex/Figure 4-3.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 4-3.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 4-3.pdf  used on input line 343.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 4-3.pdf  used on input line 371.
 (pdftex.def)             Requested size: 234.87526pt x 160.81549pt.
-<projectReportFinal_files/figure-latex/Figure 4-4.pdf, id=117, 445.665pt x 305.14pt>
+<projectReportFinal_files/figure-latex/Figure 4-4.pdf, id=109, 445.665pt x 305.14pt>
 File: projectReportFinal_files/figure-latex/Figure 4-4.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 4-4.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 4-4.pdf  used on input line 343.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 4-4.pdf  used on input line 371.
 (pdftex.def)             Requested size: 234.87526pt x 160.81549pt.
 
-Overfull \hbox (2.21791pt too wide) in paragraph at lines 343--343
+Overfull \hbox (2.21791pt too wide) in paragraph at lines 371--371
 [][] []
  []
 
 
-Overfull \hbox (2.21735pt too wide) in paragraph at lines 343--343
+Overfull \hbox (2.21735pt too wide) in paragraph at lines 371--371
 [] []
  []
 
 
-Overfull \hbox (23.6051pt too wide) in paragraph at lines 357--376
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (23.6051pt too wide) in paragraph at lines 385--404
  [][] 
  []
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.377 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+l.405 
+       <./projectReportFinal_files/figure-latex/Figure 2-1.pdf>] [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.377 
-       <./projectReportFinal_files/figure-latex/Figure 3-1.pdf>] [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+l.437 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.377 
+l.437 
+       <./projectReportFinal_files/figure-latex/Figure 3-1.pdf>]
+Overfull \hbox (48.88449pt too wide) in paragraph at lines 441--473
+ [][] 
+ []
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.474 
        <./projectReportFinal_files/figure-latex/Figure 4-1.pdf> <./projectReportFinal_files/figure-latex/Figure 4-2.pdf> <./projectReportFinal_files/figure-latex/Figure 4-3.pdf> <./projectReportFinal_files/figure-latex/Figure 4-4.pdf>]
-Overfull \hbox (48.88449pt too wide) in paragraph at lines 413--445
- [][] 
- []
-
-[7pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 492.
+(/cloud/home/.TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [8pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.446 
+l.519 
       ]
-<projectReportFinal_files/figure-latex/Figure 5-1.pdf, id=181, 464.73625pt x 282.05376pt>
+<projectReportFinal_files/figure-latex/Figure 5-1.pdf, id=196, 464.73625pt x 282.05376pt>
 File: projectReportFinal_files/figure-latex/Figure 5-1.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 5-1.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 5-1.pdf  used on input line 452.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 5-1.pdf  used on input line 536.
 (pdftex.def)             Requested size: 234.87787pt x 142.55006pt.
-<projectReportFinal_files/figure-latex/Figure 5-2.pdf, id=182, 468.75125pt x 282.05376pt>
+<projectReportFinal_files/figure-latex/Figure 5-2.pdf, id=197, 468.75125pt x 282.05376pt>
 File: projectReportFinal_files/figure-latex/Figure 5-2.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 5-2.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 5-2.pdf  used on input line 452.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 5-2.pdf  used on input line 536.
 (pdftex.def)             Requested size: 234.87572pt x 141.32779pt.
-<projectReportFinal_files/figure-latex/Figure 5-3.pdf, id=183, 468.75125pt x 282.05376pt>
+<projectReportFinal_files/figure-latex/Figure 5-3.pdf, id=198, 468.75125pt x 282.05376pt>
 File: projectReportFinal_files/figure-latex/Figure 5-3.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 5-3.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 5-3.pdf  used on input line 452.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 5-3.pdf  used on input line 536.
 (pdftex.def)             Requested size: 234.87572pt x 141.32779pt.
-<projectReportFinal_files/figure-latex/Figure 5-4.pdf, id=184, 436.63126pt x 286.06876pt>
+<projectReportFinal_files/figure-latex/Figure 5-4.pdf, id=199, 436.63126pt x 286.06876pt>
 File: projectReportFinal_files/figure-latex/Figure 5-4.pdf Graphic file (type pdf)
 <use projectReportFinal_files/figure-latex/Figure 5-4.pdf>
-Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 5-4.pdf  used on input line 452.
+Package pdftex.def Info: projectReportFinal_files/figure-latex/Figure 5-4.pdf  used on input line 536.
 (pdftex.def)             Requested size: 234.87793pt x 153.88554pt.
 
-Overfull \hbox (2.22041pt too wide) in paragraph at lines 452--452
+Overfull \hbox (2.22041pt too wide) in paragraph at lines 536--536
 [][] []
  []
 
 
-Overfull \hbox (2.22047pt too wide) in paragraph at lines 452--452
+Overfull \hbox (2.22047pt too wide) in paragraph at lines 536--536
 [] []
  []
 
-[8pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.488 \end{document}
-                    ] [9pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.488 \end{document}
-                     <./projectReportFinal_files/figure-latex/Figure 5-1.pdf> <./projectReportFinal_files/figure-latex/Figure 5-2.pdf> <./projectReportFinal_files/figure-latex/Figure 5-3.pdf> <./projectReportFinal_files/figure-latex/Figure 5-4.pdf>] (./projectReportFinal.aux)
+l.557 
+       <./projectReportFinal_files/figure-latex/Figure 5-1.pdf> <./projectReportFinal_files/figure-latex/Figure 5-2.pdf> <./projectReportFinal_files/figure-latex/Figure 5-3.pdf> <./projectReportFinal_files/figure-latex/Figure 5-4.pdf>] [10] (./projectReportFinal.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -687,18 +700,18 @@ Package rerunfilecheck Info: File `projectReportFinal.out' has not changed.
 (rerunfilecheck)             Checksum: 01A84460478AD05EF33CF3E5923B7E99;1395.
  ) 
 Here is how much of TeX's memory you used:
- 12308 strings out of 480236
- 195650 string characters out of 5895451
- 498223 words of memory out of 5000000
- 29978 multiletter control sequences out of 15000+600000
- 519278 words of font info for 69 fonts, out of 8000000 for 9000
+ 12367 strings out of 480236
+ 196676 string characters out of 5895451
+ 495316 words of memory out of 5000000
+ 30028 multiletter control sequences out of 15000+600000
+ 526212 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,12n,63p,507b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on projectReportFinal.pdf (9 pages, 436325 bytes).
+ 60i,12n,63p,511b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/cloud/home/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></cloud/home/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on projectReportFinal.pdf (10 pages, 470209 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
