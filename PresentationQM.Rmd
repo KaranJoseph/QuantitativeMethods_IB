@@ -6,6 +6,7 @@ output: beamer_presentation
 ---
 
 ```{r setup, include=FALSE}
+source("projectScript.R")
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
@@ -20,7 +21,44 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 4. EDA
 
+```{r pressure, echo=FALSE, fig.cap="A caption", out.width = '100%'}
+knitr::include_graphics("Images/Figure1.png")
+```
+
+```{r pressure, echo=FALSE, fig.cap="B caption", out.width = '100%'}
+knitr::include_graphics("Images/Figure2.png")
+```
+
+### b) Sales vs Weather
+```{r Figure 2, echo=FALSE, fig.cap="Scatterplots of Sales vs Weather", fig.show="hold", out.width="50%"}
+
+#Scatter plot of sales and total_snow
+scatterplot(sales ~ total_snow, main="sales vs total_snow",
+   xlab="Snowfall ", ylab="RetailSales ", data=data_monthly, pch=19)
+
+#Scatter plot of sales and total_rain
+scatterplot(sales ~ total_rain, main="sales vs total_rain",
+   xlab="Rainfall ", ylab="RetailSales ", data=data_monthly, pch=19)
+
+#Scatter plot of sales and spd_max_gust
+scatterplot(sales ~ spd_max_gust, main="sales vs spd_max_gust",
+   xlab="Wind Speed ", ylab="RetailSales ", data=data_monthly, pch=19)
+
+#Scatter plot of sales and mean_temp
+scatterplot(sales ~ mean_temp, main="sales vs mean_temp",
+   xlab="Temperature ", ylab="RetailSales ", data=data_monthly, pch=19)
+```
+
 ## 5. Model
+
+```{r Table3, echo=FALSE, results='asis'}
+stargazer(lm1,lm2,lm3,lm4,
+title = "Regression Table",
+label="tab1",
+table.placement = "H",
+single.row = TRUE,
+header=FALSE)
+```
 
 ### Validation
 

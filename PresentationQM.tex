@@ -1,0 +1,192 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Impact of Weather on Retail Sales in Canada: Clothing and Footwear Industry},
+  pdfauthor={KaranJoseph, Rohit Deshmukh, and Shubham Sharma},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Impact of Weather on Retail Sales in Canada: Clothing and
+Footwear Industry}
+\author{KaranJoseph, Rohit Deshmukh, and Shubham Sharma}
+\date{2022-03-28}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{1. Objective}
+\protect\hypertarget{objective}{}
+\end{frame}
+
+\begin{frame}{2. Why?}
+\protect\hypertarget{why}{}
+\end{frame}
+
+\begin{frame}{3. Methodology}
+\protect\hypertarget{methodology}{}
+\end{frame}
+
+\begin{frame}{4. EDA}
+\protect\hypertarget{eda}{}
+\begin{block}{a) Boxplot of Sales across Province}
+\protect\hypertarget{a-boxplot-of-sales-across-province}{}
+\includegraphics{PresentationQM_files/figure-beamer/Figure 1-1.pdf}
+\end{block}
+
+\begin{block}{b) Sales vs Weather}
+\protect\hypertarget{b-sales-vs-weather}{}
+\begin{figure}
+\includegraphics[width=0.5\linewidth]{PresentationQM_files/figure-beamer/Figure 2-1} \includegraphics[width=0.5\linewidth]{PresentationQM_files/figure-beamer/Figure 2-2} \includegraphics[width=0.5\linewidth]{PresentationQM_files/figure-beamer/Figure 2-3} \includegraphics[width=0.5\linewidth]{PresentationQM_files/figure-beamer/Figure 2-4} \caption{Scatterplots of Sales vs Weather}\label{fig:Figure 2}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{5. Model}
+\protect\hypertarget{model}{}
+\begin{table}[H] \centering 
+  \caption{Regression Table} 
+  \label{tab1} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & \multicolumn{4}{c}{sales} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ consumer\_confidence & 0.095$^{***}$ (0.019) &  &  &  \\ 
+  cpi\_index &  & $-$0.159$^{***}$ (0.024) &  &  \\ 
+  disposable\_income &  &  & 0.424$^{***}$ (0.010) &  \\ 
+  unemployment\_rate &  &  &  & $-$0.146$^{***}$ (0.019) \\ 
+  total\_snow & $-$0.191$^{***}$ (0.044) & $-$0.196$^{***}$ (0.043) & $-$0.044$^{**}$ (0.020) & $-$0.155$^{***}$ (0.043) \\ 
+  total\_rain & $-$0.225$^{***}$ (0.030) & $-$0.200$^{***}$ (0.030) & $-$0.015 (0.015) & $-$0.228$^{***}$ (0.029) \\ 
+  mean\_temp & $-$0.051 (0.037) & $-$0.038 (0.036) & 0.045$^{***}$ (0.017) & $-$0.055 (0.036) \\ 
+  spd\_max\_gust & $-$0.105$^{***}$ (0.030) & $-$0.014 (0.031) & $-$0.015 (0.014) & $-$0.133$^{***}$ (0.029) \\ 
+  winter & 0.693$^{***}$ (0.125) & 0.613$^{***}$ (0.123) & 0.500$^{***}$ (0.056) & 0.572$^{***}$ (0.121) \\ 
+  I(mean\_temp$\hat{\mkern6mu}$2) & $-$0.044$^{*}$ (0.024) & $-$0.084$^{***}$ (0.025) & $-$0.049$^{***}$ (0.011) & $-$0.025 (0.024) \\ 
+  total\_rain:winter & 0.062 (0.067) & 0.073 (0.066) & $-$0.034 (0.030) & 0.048 (0.065) \\ 
+  total\_snow:winter & 0.030 (0.105) & 0.043 (0.103) & 0.087$^{*}$ (0.047) & 0.051 (0.101) \\ 
+  spd\_max\_gust:winter & $-$0.098 (0.095) & $-$0.068 (0.093) & 0.002 (0.043) & $-$0.053 (0.091) \\ 
+  Constant & 14.692$^{***}$ (0.031) & 14.744$^{***}$ (0.032) & 14.722$^{***}$ (0.014) & 14.679$^{***}$ (0.030) \\ 
+ \hline \\[-1.8ex] 
+Observations & 396 & 396 & 396 & 396 \\ 
+R$^{2}$ & 0.441 & 0.465 & 0.887 & 0.482 \\ 
+Adjusted R$^{2}$ & 0.426 & 0.451 & 0.884 & 0.468 \\ 
+Residual Std. Error (df = 385) & 0.369 & 0.361 & 0.166 & 0.355 \\ 
+F Statistic (df = 10; 385) & 30.340$^{***}$ & 33.416$^{***}$ & 302.359$^{***}$ & 35.791$^{***}$ \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table}
+
+\begin{block}{Validation}
+\protect\hypertarget{validation}{}
+\end{block}
+\end{frame}
+
+\begin{frame}{6. Conclusion}
+\protect\hypertarget{conclusion}{}
+\end{frame}
+
+\begin{frame}{7. Reference}
+\protect\hypertarget{reference}{}
+\end{frame}
+
+\end{document}
