@@ -1,0 +1,29 @@
+---
+title: 'Impact of Weather on Retail Sales in Canada: Clothing and Footwear Industry'
+author: "KaranJoseph, Rohit Deshmukh, and Shubham Sharma"
+date: '2022-03-28'
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## 1. Objective
+
+## 2. Why?
+
+## 3. Methodology
+
+## 4. EDA
+
+## 5. Model
+
+### Validation
+
+## 6. Conclusion
+
+## 7. Reference
+
+
