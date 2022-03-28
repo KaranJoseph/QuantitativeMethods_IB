@@ -11,59 +11,61 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-## 1. Objective
+# 1. Objective 
 
+Determine the impact of weather on consumer behavior and retail sales
 
+# 2. Why? 
 
-## 2. Why?
+- Physiological
+- Psychological
 
-## 3. Methodology
+# 3. Methodology
 
-## 4. EDA
+- **Dependent Variable:**
+  - Monthly Retail Sales for the Clothing and Footwear Industry by QC, ON, and BC
+- **Independent Variables:**
+  - Total Snow
+  - Mean Temperature
+  - Total Rain
+  - Wind Speed
+- **Control Variables:**
+  - CPI
+  - Unemployment Rate
+  - Disposable Income
+  - Consumer Confidence
+  
 
-```{r pressure, echo=FALSE, fig.cap="A caption", out.width = '100%'}
-knitr::include_graphics("Images/Figure1.png")
-```
-
-```{r pressure, echo=FALSE, fig.cap="B caption", out.width = '100%'}
+# a) Correlation Matrix
+```{r 1, echo=FALSE, out.width = '100%', fig.align="center"}
 knitr::include_graphics("Images/Figure2.png")
 ```
 
-### b) Sales vs Weather
-```{r Figure 2, echo=FALSE, fig.cap="Scatterplots of Sales vs Weather", fig.show="hold", out.width="50%"}
-
-#Scatter plot of sales and total_snow
-scatterplot(sales ~ total_snow, main="sales vs total_snow",
-   xlab="Snowfall ", ylab="RetailSales ", data=data_monthly, pch=19)
-
-#Scatter plot of sales and total_rain
-scatterplot(sales ~ total_rain, main="sales vs total_rain",
-   xlab="Rainfall ", ylab="RetailSales ", data=data_monthly, pch=19)
-
-#Scatter plot of sales and spd_max_gust
-scatterplot(sales ~ spd_max_gust, main="sales vs spd_max_gust",
-   xlab="Wind Speed ", ylab="RetailSales ", data=data_monthly, pch=19)
-
-#Scatter plot of sales and mean_temp
-scatterplot(sales ~ mean_temp, main="sales vs mean_temp",
-   xlab="Temperature ", ylab="RetailSales ", data=data_monthly, pch=19)
+# b) Distribution Analysis
+```{r 2, echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("Images/Figure1.png")
 ```
 
-## 5. Model
-
-```{r Table3, echo=FALSE, results='asis'}
-stargazer(lm1,lm2,lm3,lm4,
-title = "Regression Table",
-label="tab1",
-table.placement = "H",
-single.row = TRUE,
-header=FALSE)
+# c) Multivariate Analysis
+```{r 3, echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("Images/Figure4.png")
 ```
 
-### Validation
+# a) Result
+```{r 4, echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("Images/Table3.png")
+```
 
-## 6. Conclusion
+# b) Validation
+```{r 5, echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("Images/Figure5.png")
+```
 
-## 7. Reference
+# 6. Conclusion
+- H1: Retail Sales decreases with rainfall \checkmark
+- H2: Retail Sales decreases with snowfall \checkmark
+- H3: Retail Sales decreases with wind speed \checkmark
+- H4: Retail Sales is negatively related to mean temperature X
+
 
 
