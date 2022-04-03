@@ -20,7 +20,11 @@ knitr::opts_chunk$set(echo = FALSE)
 - Physiological
 - Psychological
 
-# 3. Methodology
+# 3. Business Implication
+
+- 
+
+# 4. Methodology
 
 - **Dependent Variable:**
   - Monthly Retail Sales for the Clothing and Footwear Industry by QC, ON, and BC
@@ -61,11 +65,11 @@ knitr::include_graphics("Images/Table3.png")
 knitr::include_graphics("Images/Figure5.png")
 ```
 
-# 6. Conclusion
+# 5. Conclusion
 - H1: Retail Sales decreases with rainfall \checkmark
 - H2: Retail Sales decreases with snowfall \checkmark
 - H3: Retail Sales decreases with wind speed \checkmark
 - H4: Retail Sales is negatively related to mean temperature X
 
-
+# 6. Limitations
 
