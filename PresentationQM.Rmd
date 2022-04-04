@@ -43,19 +43,18 @@ knitr::opts_chunk$set(echo = FALSE)
   - Consumer Confidence
   
 
-# a) Correlation Matrix
-```{r 1, echo=FALSE, out.width = '100%', fig.align="center"}
-knitr::include_graphics("Images/Figure2.png")
-```
-
-# b) Distribution Analysis
+# a) Distribution Analysis
 ```{r 2, echo=FALSE, out.width = '100%', fig.align="center"}
 knitr::include_graphics("Images/Figure1.png")
 ```
 
-# c) Multivariate Analysis
+# b) Multivariate Analysis
 ```{r 3, echo=FALSE, out.width = '100%', fig.align="center"}
 knitr::include_graphics("Images/Figure4.png")
+```
+# c) Correlation Matrix
+```{r 1, echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("Images/Figure2.png")
 ```
 
 # a) Result
