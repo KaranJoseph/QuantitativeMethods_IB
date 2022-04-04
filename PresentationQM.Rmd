@@ -22,7 +22,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # 3. Business Implication
 
-- 
+- Potential to improve demand forecasting at Retailer level that can improve major supply chain functions such as
+  - Inventory management
+  - Material Planning
+  - Price Optimization
 
 # 4. Methodology
 
@@ -65,11 +68,14 @@ knitr::include_graphics("Images/Table3.png")
 knitr::include_graphics("Images/Figure5.png")
 ```
 
-# 5. Conclusion
+# 7. Conclusion
 - H1: Retail Sales decreases with rainfall \checkmark
 - H2: Retail Sales decreases with snowfall \checkmark
 - H3: Retail Sales decreases with wind speed \checkmark
 - H4: Retail Sales is negatively related to mean temperature X
 
-# 6. Limitations
-
+# 8. Limitations
+- Research focus on offline retail sales
+- No distinction between street side stores and mall stores
+- Few weather parameters were not considered
+- Monthly aggregation data was considered
