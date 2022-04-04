@@ -43,7 +43,8 @@ knitr::opts_chunk$set(echo = FALSE)
   - Consumer Confidence
   
 
-# a) Distribution Analysis
+# 5. EDA
+## a) Distribution Analysis
 ```{r 2, echo=FALSE, out.width = '100%', fig.align="center"}
 knitr::include_graphics("Images/Figure1.png")
 ```
@@ -57,7 +58,8 @@ knitr::include_graphics("Images/Figure4.png")
 knitr::include_graphics("Images/Figure2.png")
 ```
 
-# a) Result
+# 6. Modelling
+## a) Result
 ```{r 4, echo=FALSE, out.width = '100%', fig.align="center"}
 knitr::include_graphics("Images/Table3.png")
 ```
