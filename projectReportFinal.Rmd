@@ -7,10 +7,18 @@ geometry: "left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm"
 toc: true
 theme: united
 fig_caption: yes
+
+header-includes:
+ \usepackage{booktabs}
+ \usepackage{longtable}
+ \usepackage{array}
+ \usepackage{multirow}
+ \usepackage{wrapfig}
+ \usepackage{float}
 ---
-```{r, include=FALSE}
+```{r global_options, include=FALSE}
 source("projectScript.R")
-knitr::opts_chunk$set(fig.pos = "!h", out.extra = "")
+knitr::opts_chunk$set(fig.pos = 'H', out.extra = "")
 ```
 
 ## 1. Introduction
